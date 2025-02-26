@@ -11,7 +11,7 @@ var config = convict({
   udp: {
     doc: "Enable UDP server.",
     format: Boolean,
-    default: true,
+    default: false,
     env: "UDP"
   },
   websocket: {
@@ -24,7 +24,7 @@ var config = convict({
     doc:
       "List of allowed info hashes. If this option is omitted, all torrents are allowed.",
     format: Array,
-    default: [],
+    default: false,
     env: "TORRENT_WHITELIST"
   },
   stats: {
